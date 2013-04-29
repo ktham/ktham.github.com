@@ -1,42 +1,60 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-   
-   <!-- Loading Bootstrap -->
-   <link rel="stylesheet" href="/css/bootstrap.css" />
-   <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/css/social_foundicons.css" />
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/social_foundicons_ie7.css" />
+  <![endif]-->
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  <link rel="stylesheet" href="/css/ktham.css" type="text/css" />        
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body>
-  <header class="navbar navbar-inverse navbar-fixed-top">
+  <header class="navbar navbar-inverse">
     <div class="navbar-inner">
       <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <a class="brand" href="/">Kevin Tham</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        <ul class="nav">
+          <li><a href="/posts.html">Posts</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="https://github.com/ktham"><i class="foundicon-github"></i></a></li>
+          <li><a href="https://twitter.com/kevinsf90"><i class="foundicon-twitter"></i></a></li>
+          <li><a href="http://linkedin.com/in/kevinmjt"><i class="foundicon-linkedin"></i></a></li>
+        </ul>
       </div>
     </div>
   </header>
-
-  {{ content }}
-
+  <div id="wrapper">
+    {{ content }}
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <span class="muted credit">Copyright © 2013, Kevin Tham. All rights reserved.</span>
+    </div>
+  </footer>
+  
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/js/jquery-1.9.1.js"></script>
+  <script src="/js/jquery-ui-1.10.0.custom.min.js"></script>
+  <script src="/js/jquery.dropkick-1.0.0.js"></script>
+  <script src="/js/custom_checkbox_and_radio.js"></script>
+  <script src="/js/custom_radio.js"></script>
+  <script src="/js/jquery.tagsinput.js"></script>
+  <script src="/js/bootstrap-tooltip.js"></script>
+  <script src="/js/jquery.placeholder.js"></script>
+  <script src="/js/application.js"></script>
+  <!--[if lt IE 8]>
+    <script src="/js/icon-font-ie7.js"></script>
+    <script src="/js/icon-font-ie7-24.js"></script>
+  <![endif]-->
 </body>
 </html>
