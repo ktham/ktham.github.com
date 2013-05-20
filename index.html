@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Kevin Tham
+title: Home
 ---
-
-<div class="container">
-  <h1>Recent Posts</h1>
-  <table class="table posts">
-    {% for post in site.posts %}
-      <tr>
-        <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-        <td><span>{{ post.date | date_to_string }}</span></td>
-      </tr>
-      
-    {% endfor %}
-  </table>
+<div class="grid-container">
+  <div class="posts grid-75 prefix-10 suffix-15">
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>     
+      {% endfor %}
+    </ul>
+  </div>
+    
 </div>

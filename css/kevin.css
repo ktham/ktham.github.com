@@ -1,0 +1,159 @@
+body {
+  font: 400 100%/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #444;
+}
+
+header {
+  left: 0;
+  width: 100%;
+  padding: 8px 5px;
+  background-color: #363d40;
+  color: #FFF;
+}
+
+header .name,
+header .name a {
+  font-size: 32px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+header .description {
+
+}
+
+a {
+  color: #007EDF;
+}
+
+a:focus,
+a:hover {
+  color: #307EA9;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a, 
+h6 a {
+  text-decoration: none;
+  color: #444;
+}
+
+/* NAV */
+
+.nav {
+  margin-left: 0;
+  list-style: none;
+}
+
+.nav > ul {
+  display: inline-block;
+}
+
+.nav > li {
+  float: left;
+}
+
+.nav > li > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  /* background-color: #FFF; */
+}
+
+/* Prevent IE8 from misplacing imgs
+   See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989 */
+.nav > li > a > img {
+  max-width: none;
+}
+
+/* Homepage */
+.intro .title,
+.posts .title {
+  font-size:20px;
+}
+
+/* Post */
+
+
+.posts li {
+  list-style-type: none;
+  padding: 6px 2px;
+  border-bottom: 1px solid #CCC;
+}
+.posts li .date {
+  float: right;
+  color: #AAA;
+}
+
+.posts li a {
+  text-decoration: none;
+}
+
+.post .title {
+  margin-bottom: 0;
+}
+
+.post .date {
+  font-size: 14px;
+  font-style: italic;
+  color: #AAA;
+}
+
+.post .content {
+  margin-top: 15px;
+}
+
+/* Social */
+.social-wrapper {
+  margin-top: 50px;
+  border-top: 1px solid #EEE;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #666;
+}
+
+.social-wrapper a {
+  text-decoration: none;
+  color: #666;
+}
+
+.social-wrapper p {
+  font-size: 75%;
+  margin: 0;
+  padding: 0;
+}
+
+.social-wrapper [class*="foundicon-"] {
+  zoom: 225%;
+}
+
+
+/* Snap.js */
+.scrollable{
+  overflow: auto;
+  -webkit-transition-property: top, bottom;
+  transition-property: top, bottom;
+  -webkit-transition-duration: .2s, .2s;
+  transition-duration: .2s, .2s;
+  -webkit-transition-timing-function: linear, linear;
+  transition-timing-function: linear, linear;
+  -webkit-overflow-scrolling: touch;
+}
+
+.snapjs-right .left-drawer,
+.snapjs-left .right-drawer {
+  display: none;
+}
+
+.toggle {
+  background-color: #0e0e0e;
+  color: #FFF;
+}
+

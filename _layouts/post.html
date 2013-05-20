@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
-<div id="post" class="container">
-{{ content }}
+<div class="post grid-container">
+  <h1 class="title grid-85 prefix-15">
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </h1>
+  <div class="date grid-85 prefix-15">
+    {{ page.date | date: "%B %e, %Y" }}
+  </div>
+  <div class="content grid-85 push-15">
+    {{ content }}
+  </div>  
 </div>
+{% include social_footer.html %}
